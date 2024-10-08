@@ -1,0 +1,74 @@
+/* Custom styles for BigCalendar */
+.rbc-calendar {
+  font-family: inherit;
+}
+
+.rbc-header {
+  padding: 10px 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.rbc-button-link {
+  color: inherit;
+}
+
+.rbc-event {
+  border: none;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
+.rbc-today {
+  background-color: rgba(var(--primary), 0.1);
+}
+
+.rbc-off-range-bg {
+  background-color: rgba(var(--muted), 0.1);
+}
+
+.rbc-toolbar button {
+  color: hsl(var(--primary));
+}
+
+.rbc-toolbar button:hover {
+  background-color: rgba(var(--primary), 0.1);
+}
+
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.rbc-month-view,
+.rbc-time-view,
+.rbc-agenda-view {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.rbc-day-bg + .rbc-day-bg,
+.rbc-month-row + .rbc-month-row {
+  border-color: hsl(var(--border));
+}
+
+.rbc-timeslot-group {
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.rbc-time-content > * + * > * {
+  border-left: 1px solid hsl(var(--border));
+}
+
+.rbc-time-header-content {
+  border-left: 1px solid hsl(var(--border));
+}
+
+.rbc-time-header.rbc-overflowing {
+  border-right: 1px solid hsl(var(--border));
+}
+
+.rbc-time-view {
+  border: 1px solid hsl(var(--border));
+}
